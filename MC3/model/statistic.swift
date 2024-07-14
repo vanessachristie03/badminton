@@ -13,11 +13,15 @@ struct Statistic: Identifiable {
     let value: Double
 }
 struct CardData: Identifiable {
-    var id = UUID()
-    var title: String
-    var subtitle: String
-    var imageName: String
-    var rating: String
-    var duration: String
-    var detail: String
+    let id = UUID()
+    let title: String
+    let subtitle: String
+    let imageName: String
+    let rating: String
+    let duration: String
+    let detail: String
+    let author: String
+    let date: String
+   
 }
+

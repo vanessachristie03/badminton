@@ -5,14 +5,18 @@
 //  Created by Vanessa on 14/07/24.
 //
 
+
 import SwiftUI
 
-struct statisticViewModel: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+class StatisticsViewModel: ObservableObject {
+    @Published var statistics: [Statistic] = [
+        Statistic(month: "Jan", value: 10),
+        Statistic(month: "Feb", value: 20),
+        Statistic(month: "Mar", value: 15),
+        Statistic(month: "Apr", value: 30),
+        Statistic(month: "May", value: 25),
+        Statistic(month: "Jun", value: 40),
+        Statistic(month: "Jul", value: 35)
+    ]
 }
 
-#Preview {
-    statisticViewModel()
-}
